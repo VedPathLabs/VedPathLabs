@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ved Pathology Laboratory | Home | Dr. Dhwani Bhatt M.D. (Pathology)</title>
+  <meta name="description" content="Ved Pathology Laboratory in Memnagar, Ahmedabad. 15+ Years experience, Dr. Dhwani Bhatt M.D. Pathology, Fellowship in Hemato-oncology at GCRI. Hematology & Clinical Pathology expertise.">
+  <meta name="keywords" content="Pathology Lab Memnagar, Ved Pathology Laboratory, Dr Dhwani Bhatt, Hemato-oncology GCRI, Hematology Ahmedabad, Home Sample Collection">
+  
+  <link rel="icon" type="image/png" href="Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="Logo.png" alt="Ved Pathology Laboratory Logo" class="logo-img">
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+        <li><a href="packages.html" class="nav-link">Packages</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+
+      <!-- Action Button -->
+      <div class="header-cta-btn">
+        <button class="btn btn-primary" onclick="openModal('homeVisitModal')">
+          <i class="fas fa-home"></i> Book Home Visit
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div style="margin-top: 1.5rem;">
+        <button class="btn btn-whatsapp" style="width: 100%;" onclick="openModal('homeVisitModal')">
+          <i class="fab fa-whatsapp"></i> Book Home Visit via WhatsApp
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge badge-teal">
+          <i class="fas fa-award"></i> 15+ Years Clinical Experience
+        </span>
+        <h1>Accurate Pathology Reports <span>Verified by Expert Pathologist</span></h1>
+        <p class="hero-subtitle">
+          Led by <strong>Dr. Dhwani Bhatt M.D. (Pathology)</strong> with a <strong>Fellowship in Hemato-oncology at GCRI</strong> and <strong>15+ years of experience</strong> in Hematology & Clinical Pathology. Advanced computerized diagnostics with doorstep home collection.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn btn-primary btn-lg" onclick="openModal('homeVisitModal')">
+            <i class="fab fa-whatsapp"></i> Book Home Collection
+          </button>
+          <a href="packages.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.4); color: var(--pure-white);">
+            <i class="fas fa-notes-medical"></i> View Health Profiles
+          </a>
+        </div>
+
+        <!-- Relevant Stat Badges -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-user-md"></i></div>
+            <div class="stat-title">15+ Yrs Exp.</div>
+            <div class="stat-desc">Senior Pathologist</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-award"></i></div>
+            <div class="stat-title">GCRI Fellow</div>
+            <div class="stat-desc">Hemato-oncology</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-vial"></i></div>
+            <div class="stat-title">Home Visit</div>
+            <div class="stat-desc">Sample Collection</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-laptop-medical"></i></div>
+            <div class="stat-title">100% Automated</div>
+            <div class="stat-desc">Computerized Lab</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Banner -->
+      <div class="hero-media-card">
+        <img src="images/hero_lab.png" alt="Ved Pathology Laboratory Computerized Setup">
+        <div class="hero-badge-overlay">
+          <img src="images/doctor.png" alt="Dr Dhwani Bhatt M.D. Pathology" class="doctor-avatar-sm">
+          <div class="hero-badge-info">
+            <h4>Dr. Dhwani Bhatt</h4>
+            <p>M.D. Pathology | Fellowship GCRI</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT PREVIEW SECTION -->
+  <section class="about">
+    <div class="container about-grid">
+      <div class="about-img-box">
+        <img src="images/doctor.png" alt="Dr Dhwani Bhatt M.D. Pathology">
+        <div class="experience-tag">
+          <i class="fas fa-ribbon"></i> 15+ Years Experience
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="badge badge-teal">Director & Pathologist Spotlight</span>
+        <h2 style="margin: 0.6rem 0 0.8rem;">Dr. Dhwani Bhatt M.D. (Pathology)</h2>
+        
+        <div class="credentials-container">
+          <div class="credential-pill">
+            <i class="fas fa-graduation-cap"></i> M.D. (Pathology)
+          </div>
+          <div class="credential-pill">
+            <i class="fas fa-hospital"></i> Fellowship in Hemato-oncology at GCRI
+          </div>
+          <div class="credential-pill">
+            <i class="fas fa-stethoscope"></i> Expertise in Hematology & Clinical Pathology
+          </div>
+        </div>
+
+        <p style="color: var(--text-muted); margin-bottom: 1.2rem;">
+          <strong>VED PATHOLOGY LABORATORY</strong> provides top-tier diagnostic evaluation backed by over 15 years of dedicated pathology experience. Dr. Dhwani Bhatt specializes in advanced hematological investigation, blood disorders, and comprehensive clinical pathology.
+        </p>
+
+        <ul class="about-features-list">
+          <li><i class="fas fa-check-circle"></i> Reports Verified by M.D. Pathologist</li>
+          <li><i class="fas fa-check-circle"></i> Specialized Hematology Expertise</li>
+          <li><i class="fas fa-check-circle"></i> Fully Automatic Computerized Instruments</li>
+          <li><i class="fas fa-check-circle"></i> Doorstep Home Sample Collection</li>
+        </ul>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem;">
+          <a href="about.html" class="btn btn-navy">
+            Learn More About Us <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://wa.me/919316104101?text=Hello%20Dr.%20Dhwani%20Bhatt,%20I%20have%20a%20pathology%20inquiry." target="_blank" class="btn btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp (+91 93161 04101)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACILITIES OVERVIEW -->
+  <section class="facilities">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="badge badge-teal">Core Services</span>
+        <h2>Available Facilities</h2>
+        <p>Comprehensive diagnostic facilities designed for accuracy, speed, and patient convenience.</p>
+      </div>
+
+      <div class="facilities-grid">
+        <div class="facility-card">
+          <div class="facility-icon-wrap"><i class="fas fa-user-check"></i></div>
+          <h3>Reports Verified by Expert Pathologist</h3>
+          <p>Reports verified by <strong>Dr. Dhwani Bhatt M.D. (Pathology)</strong>, Fellow in Hemato-oncology at GCRI.</p>
+          <a href="facilities.html" class="btn btn-outline-teal btn-sm facility-cta">Learn More</a>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon-wrap"><i class="fas fa-laptop-medical"></i></div>
+          <h3>Fully Automatic Computerized Lab</h3>
+          <p>Next-generation computerized analyzers for precise hematology, biochemistry, and clinical pathology.</p>
+          <a href="facilities.html" class="btn btn-outline-teal btn-sm facility-cta">Learn More</a>
+        </div>
+
+        <div class="facility-card">
+          <div class="facility-icon-wrap"><i class="fas fa-truck-pickup"></i></div>
+          <h3>Home Sample Collection Services</h3>
+          <p>Hygienic, doorstep sample collection service anywhere across Ahmedabad.</p>
+          <button class="btn btn-primary btn-sm facility-cta" onclick="openModal('homeVisitModal')">
+            <i class="fab fa-whatsapp"></i> Book Home Visit
+          </button>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 2.5rem;">
+        <a href="facilities.html" class="btn btn-navy">View All Facilities <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPULAR PACKAGES PREVIEW -->
+  <section class="packages">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="badge badge-teal">Popular Profiles</span>
+        <h2>Featured Health Packages</h2>
+        <p>Targeted diagnostic packages verified by expert pathologist.</p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Package 1 -->
+        <div class="package-card">
+          <div class="package-header">
+            <span class="package-badge-tag">Popular</span>
+            <h3>Preventive Health Checkup Plans</h3>
+            <span class="package-subtitle">Full Body Screening</span>
+          </div>
+          <div class="package-body">
+            <ul class="package-tests-list">
+              <li><i class="fas fa-check-circle"></i> Complete Blood Count (CBC)</li>
+              <li><i class="fas fa-check-circle"></i> Lipid Profile (Cholesterol)</li>
+              <li><i class="fas fa-check-circle"></i> Kidney & Liver Function Tests</li>
+              <li><i class="fas fa-check-circle"></i> Fasting Blood Sugar & HbA1c</li>
+              <li><i class="fas fa-check-circle"></i> Urine Routine & Microscopic</li>
+            </ul>
+            <div class="package-footer">
+              <button class="btn btn-whatsapp btn-sm" onclick="bookPackageWhatsApp('Preventive Health Checkup Plan', 'Standard Rate')">
+                <i class="fab fa-whatsapp"></i> Book via WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="package-card">
+          <div class="package-header">
+            <span class="package-badge-tag">Essential</span>
+            <h3>Fever Profile</h3>
+            <span class="package-subtitle">Acute Infection Screening</span>
+          </div>
+          <div class="package-body">
+            <ul class="package-tests-list">
+              <li><i class="fas fa-check-circle"></i> Complete Blood Count & Platelets</li>
+              <li><i class="fas fa-check-circle"></i> Dengue NS1 & IgG/IgM</li>
+              <li><i class="fas fa-check-circle"></i> Typhoid Widal Test</li>
+              <li><i class="fas fa-check-circle"></i> Malaria Antigen & ESR</li>
+            </ul>
+            <div class="package-footer">
+              <button class="btn btn-whatsapp btn-sm" onclick="bookPackageWhatsApp('Fever Profile', 'Standard Rate')">
+                <i class="fab fa-whatsapp"></i> Book via WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="package-card">
+          <div class="package-header">
+            <h3>Diabetes Profile</h3>
+            <span class="package-subtitle">Glycemic Control Panel</span>
+          </div>
+          <div class="package-body">
+            <ul class="package-tests-list">
+              <li><i class="fas fa-check-circle"></i> Fasting & PP Blood Glucose</li>
+              <li><i class="fas fa-check-circle"></i> HbA1c (3-Month Average)</li>
+              <li><i class="fas fa-check-circle"></i> Urine Microalbumin</li>
+              <li><i class="fas fa-check-circle"></i> Kidney Function & Lipid Profile</li>
+            </ul>
+            <div class="package-footer">
+              <button class="btn btn-whatsapp btn-sm" onclick="bookPackageWhatsApp('Diabetes Profile', 'Standard Rate')">
+                <i class="fab fa-whatsapp"></i> Book via WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 2.5rem;">
+        <a href="packages.html" class="btn btn-navy">Explore All 10 Health Profiles <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME VISIT MODAL DIALOG -->
+  <div class="modal-backdrop" id="homeVisitModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3><i class="fab fa-whatsapp text-teal"></i> Book Home Sample Collection</h3>
+        <button class="modal-close" onclick="closeModal('homeVisitModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--text-muted); margin-bottom: 1.25rem; font-size: 0.95rem;">
+          Our phlebotomist will collect samples directly from your home. Submitting will open WhatsApp with your appointment details.
+        </p>
+
+        <form id="homeVisitForm">
+          <div class="form-group">
+            <label for="hvName">Patient Name *</label>
+            <input type="text" id="hvName" class="form-control" placeholder="Enter patient name" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hvPhone">Phone Number *</label>
+              <input type="tel" id="hvPhone" class="form-control" placeholder="+91 93161 04101" required>
+            </div>
+            <div class="form-group">
+              <label for="hvTest">Required Test / Package</label>
+              <input type="text" id="hvTest" class="form-control" placeholder="e.g. Fever Profile">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="hvAddress">Full Delivery Address *</label>
+            <textarea id="hvAddress" class="form-control" rows="3" placeholder="Address in Ahmedabad" required></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hvDate">Preferred Date</label>
+              <input type="date" id="hvDate" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="hvTime">Preferred Time Slot</label>
+              <select id="hvTime" class="form-control">
+                <option value="Morning (7:30 AM - 10:00 AM)">Morning (7:30 AM - 10:00 AM)</option>
+                <option value="Late Morning (10:00 AM - 1:00 PM)">Late Morning (10:00 AM - 1:00 PM)</option>
+                <option value="Afternoon (1:00 PM - 4:00 PM)">Afternoon (1:00 PM - 4:00 PM)</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp" style="width: 100%; margin-top: 1rem;">
+            <i class="fab fa-whatsapp"></i> Confirm & Open WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/919316104101?text=Hello%20Ved%20Pathology%20Laboratory,%20I%20would%20like%20to%20inquire." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- CONSISTENT FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <img src="Logo.png" alt="Ved Pathology Laboratory Logo" style="height: 52px; border-radius: 4px; background: white; padding: 4px;">
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem;">
+            Supervised by <strong>Dr. Dhwani Bhatt M.D. (Pathology)</strong>, Fellow in Hemato-oncology at GCRI with 15+ years experience in Hematology and Clinical Pathology.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="packages.html">Health Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Packages</h4>
+          <ul class="footer-links">
+            <li><a href="packages.html">Fever Profile</a></li>
+            <li><a href="packages.html">Diabetes Profile</a></li>
+            <li><a href="packages.html">Heart Profile</a></li>
+            <li><a href="packages.html">Preventive Checkup</a></li>
+            <li><a href="packages.html">Pregnancy Profile</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Laboratory Contacts</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+            <i class="fas fa-map-marker-alt text-teal"></i> 103, Sigma Spectrum, Swami Vivekanand Chowk, Nr. Gurukul Road, Memnagar, Ahmedabad, Gujarat - 380052
+          </p>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+            <i class="fab fa-whatsapp text-teal"></i> <a href="https://wa.me/919316104101" target="_blank">+91 93161 04101</a>
+          </p>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+            <i class="fas fa-envelope text-teal"></i> <a href="mailto:ved.pathlab.ahmd@gmail.com">ved.pathlab.ahmd@gmail.com</a>
+          </p>
+          <p style="font-size: 0.9rem;">
+            <i class="fas fa-clock text-teal"></i> Mon - Sat: 07:30 AM to 07:30 PM (Sunday Closed)
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>VED PATHOLOGY LABORATORY</strong>. All Rights Reserved.
+        </div>
+        <div>
+          Supervised by Dr. Dhwani Bhatt M.D. (Pathology) | GCRI Fellow | Contact: +91 93161 04101
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

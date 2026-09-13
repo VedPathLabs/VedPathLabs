@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Ved Pathology Laboratory | Ahmedabad</title>
+  <meta name="description" content="View the modern diagnostic infrastructure, automated biochemistry analyzers, clinical testing setup, and phlebotomy home collection kits at Ved Pathology Laboratory Ahmedabad.">
+  <meta name="keywords" content="Pathology Lab Gallery Ahmedabad, Ved Pathology Equipment, Automated Hematology Analyzer, Phlebotomy Home Collection Kit">
+  
+  <link rel="icon" type="image/png" href="Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER NAVIGATION -->
+  <header class="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="Logo.png" alt="Ved Pathology Laboratory Logo" class="logo-img">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+        <li><a href="packages.html" class="nav-link">Packages</a></li>
+        <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+
+      <div class="header-cta-btn">
+        <button class="btn btn-primary" onclick="openModal('homeVisitModal')">
+          <i class="fas fa-home"></i> Book Home Visit
+        </button>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div style="margin-top: 1.5rem;">
+        <button class="btn btn-whatsapp" style="width: 100%;" onclick="openModal('homeVisitModal')">
+          <i class="fab fa-whatsapp"></i> Book Home Visit via WhatsApp
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUBPAGE BANNER -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Laboratory Infrastructure Gallery</h1>
+      <p>Tour our state-of-the-art computerized diagnostic environment and clinical facilities.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <i class="fas fa-chevron-right" style="font-size: 0.75rem;"></i> <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <section class="gallery">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="badge badge-teal">Infrastructure Showcase</span>
+        <h2>High Tech Laboratory Facility</h2>
+        <p>Built with absolute hygiene, precision equipment, and ergonomic patient reception space.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/hero_lab.png" alt="Computerized Pathology Lab">
+          <div class="gallery-overlay">
+            <span class="gallery-title">Computerized Diagnostic Station</span>
+            <span class="gallery-subtitle">High precision automated analyzers</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/automation.png" alt="Fully Automated Biochemistry Analyzer">
+          <div class="gallery-overlay">
+            <span class="gallery-title">Automated Biochemistry Analyzer</span>
+            <span class="gallery-subtitle">Error-free automated testing platform</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/testing.png" alt="Clinical Microscopic Testing Setup">
+          <div class="gallery-overlay">
+            <span class="gallery-title">Hematology & Clinical Diagnostics Desk</span>
+            <span class="gallery-subtitle">Dr. Dhwani Bhatt verification station</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/home_visit.png" alt="Home Sample Collection Kit">
+          <div class="gallery-overlay">
+            <span class="gallery-title">Sterile Home Visit Sample Kit</span>
+            <span class="gallery-subtitle">Hygienic doorstep phlebotomy service</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME VISIT MODAL DIALOG -->
+  <div class="modal-backdrop" id="homeVisitModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3><i class="fab fa-whatsapp text-teal"></i> Book Home Sample Collection</h3>
+        <button class="modal-close" onclick="closeModal('homeVisitModal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="homeVisitForm">
+          <div class="form-group">
+            <label for="hvName">Patient Name *</label>
+            <input type="text" id="hvName" class="form-control" placeholder="Enter patient name" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="hvPhone">Phone Number *</label>
+              <input type="tel" id="hvPhone" class="form-control" placeholder="+91 93161 04101" required>
+            </div>
+            <div class="form-group">
+              <label for="hvTest">Required Test</label>
+              <input type="text" id="hvTest" class="form-control" placeholder="e.g. Blood Test / Routine Checkup">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="hvAddress">Full Address *</label>
+            <textarea id="hvAddress" class="form-control" rows="3" placeholder="Address in Ahmedabad" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-whatsapp" style="width: 100%; margin-top: 1rem;">
+            <i class="fab fa-whatsapp"></i> Confirm & Open WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/919316104101?text=Hello%20Ved%20Pathology%20Laboratory,%20I%20have%20a%20gallery%20inquiry." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- CONSISTENT FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <img src="Logo.png" alt="Ved Pathology Laboratory Logo" style="height: 52px; border-radius: 4px; background: white; padding: 4px;">
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem;">
+            Supervised by <strong>Dr. Dhwani Bhatt M.D. (Pathology)</strong>, Fellow in Hemato-oncology at GCRI with 15+ years experience in Hematology and Clinical Pathology.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="packages.html">Health Packages</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Packages</h4>
+          <ul class="footer-links">
+            <li><a href="packages.html">Fever Profile</a></li>
+            <li><a href="packages.html">Diabetes Profile</a></li>
+            <li><a href="packages.html">Heart Profile</a></li>
+            <li><a href="packages.html">Preventive Checkup</a></li>
+            <li><a href="packages.html">Pregnancy Profile</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Laboratory Contacts</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+            <i class="fas fa-map-marker-alt text-teal"></i> 103, Sigma Spectrum, Swami Vivekanand Chowk, Nr. Gurukul Road, Memnagar, Ahmedabad, Gujarat - 380052
+          </p>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+            <i class="fab fa-whatsapp text-teal"></i> <a href="https://wa.me/919316104101" target="_blank">+91 93161 04101</a>
+          </p>
+          <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">
+            <i class="fas fa-envelope text-teal"></i> <a href="mailto:ved.pathlab.ahmd@gmail.com">ved.pathlab.ahmd@gmail.com</a>
+          </p>
+          <p style="font-size: 0.9rem;">
+            <i class="fas fa-clock text-teal"></i> Mon - Sat: 07:30 AM to 07:30 PM (Sunday Closed)
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>VED PATHOLOGY LABORATORY</strong>. All Rights Reserved.
+        </div>
+        <div>
+          Supervised by Dr. Dhwani Bhatt M.D. (Pathology) | GCRI Fellow | Contact: +91 93161 04101
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
